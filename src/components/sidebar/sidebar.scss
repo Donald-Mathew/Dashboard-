@@ -1,0 +1,99 @@
+
+.sidebar {
+    flex: 1;
+    border-right: 0.6px solid lightgray;
+    min-height: 100vh;
+    background-color: white;
+
+    .horizontal {
+        margin-top: -4px;
+       
+    }
+
+
+    .top {
+         height: 54px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color:rgb(92, 0, 128) ;
+         }
+
+    }
+
+  
+
+    .center {
+        padding-left: 10px;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 8px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffe8f9;
+                }
+
+                .icon {
+                    color: rgb(92, 0, 128);
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: #888;
+                    margin-left: 10px;
+                }
+            }
+
+            .title {
+                font-size: 12px;
+                font-weight: bold;
+                color: rgb(92, 0, 128);
+                margin-top: 15px;
+                margin-bottom: 14px;
+            }
+ 
+        }
+    }
+
+    .bottom {
+        display: flex;
+         align-items: center;
+         margin: 10px;
+
+
+         .colorOption {
+            width: 20px;
+            height: 20px;
+            border-radius: 6px;
+            border: 1.2px solid rgb(92, 0, 128);
+            cursor: pointer;
+            margin: 5px;
+            
+
+
+            &:nth-child(1) {
+                background-color: whitesmoke;
+            }
+            &:nth-child(2) {
+                background-color: #333;
+            }
+            &:nth-child(3) {
+                background-color: darkblue;
+            }
+         }
+    }
+}
